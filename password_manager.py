@@ -2,11 +2,15 @@
 from cryptography.fernet import Fernet
 
 '''
+#function to generate key
+
 def write_key():
     key = Fernet.generate_key()
     with open("key.key", "wb") as key_file:
         key_file.write(key)
-        
+
+#calling function to generate "key.key" file (only required once)
+
 write_key()
 '''
 
